@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adrián Colomo Moragues</title>
+<meta name="description" content="Web personal de Adrián Colomo Moragues: ciencia de datos, IA y desarrollo de software.">
+<link rel="icon" href="favicon.ico?v=8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/styles.css?v=8">
+</head>
+<body>
+<nav class="top" aria-label="Secciones">
+  <div class="inner">
+    <a class="brand" href="#inicio">Adrián Colomo Moragues<span>.</span></a>
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#camino">Formación</a></li>
+      <li><a href="#stack">Conocimientos</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#aficiones">Aficiones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <canvas id="cloud" aria-hidden="true"></canvas>
+  <div class="inner">
+    <span class="kicker">Ciencia de Datos e IA · Alicante</span>
+    <h1>Adrián Colomo <span>Moragues</span></h1>
+    <p class="lead">Programo desde antes de saber que lo que más me gustaría sería entender los datos. Hoy junto las dos cosas: construir software y sacar conclusiones de lo que mide.</p>
+    <div class="ctas">
+      <a class="btn primary" href="#proyectos">Ver proyectos</a>
+      <a class="btn ghost" href="https://github.com/AdrianColomoMoragues" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/adri%C3%A1n-colomo-moragues-6305581b0/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</header>
+
+<section id="sobre-mi"><div class="inner">
+  <div class="about">
+    <div>
+      <div class="about-head">
+        <img class="avatar" src="img/adrian.jpg?v=8" alt="Foto de Adrián Colomo Moragues" width="120" height="120">
+        <div>
+          <span class="kicker">Sobre mí</span>
+          <h2>De desarrollar aplicaciones a entender los datos que hay detrás</h2>
+        </div>
+      </div>
+      <p>Soy Adrián, estudiante de Ciencia de Datos e Inteligencia Artificial en la Universidad Miguel Hernández. Antes estudié Desarrollo de Aplicaciones Multiplataforma, y en mis prácticas en NTT DATA trabajé en el área de ciberseguridad de Banco Sabadell.</p>
+      <p>Allí descubrí que muchas de las herramientas de seguridad funcionan con modelos y datos: detectan fraude aprendiendo cómo se comporta cada usuario. Esa idea me llevó a la ciencia de datos, y desde entonces intento que cada proyecto que hago combine buen código con buen análisis.</p>
+      <p>[PERSONALIZAR: una o dos frases tuyas sobre qué te engancha de programar y de los datos.]</p>
+    </div>
+    <ul class="traits">
+      <li><b>Pienso como desarrollador</b><span>Código ordenado, control de versiones, pipelines y documentación, aprendido en un entorno profesional.</span></li>
+      <li><b>Analizo como estadístico</b><span>Modelos, simulación e inferencia: me interesa que los resultados tengan una incertidumbre bien medida.</span></li>
+      <li><b>Termino lo que empiezo</b><span>Mis proyectos acaban desplegados y accesibles, no solo en un notebook.</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="camino" class="band"><div class="inner">
+  <span class="kicker">Formación y experiencia</span>
+  <h2>Mi camino hasta aquí</h2>
+  <div class="path">
+    <div class="step">
+      <span class="yr">2021 – 2024</span>
+      <h3>CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
+      <p>IES Doctor Balmis, Alicante. Programación de escritorio, móvil y web, bases de datos y APIs.</p>
+      <div class="tags"><span>Java</span><span>Kotlin</span><span>C#</span><span>SQL</span></div>
+    </div>
+    <div class="step">
+      <span class="yr">2024</span>
+      <h3>Prácticas en NTT DATA</h3>
+      <p>Área de ciberseguridad de Banco Sabadell: pruebas e integración de RSA y BioCatch, pipelines con Jenkins y control de versiones con Bitbucket.</p>
+      <div class="tags"><span>Jenkins</span><span>Bitbucket</span><span>CI/CD</span></div>
+    </div>
+    <div class="step now">
+      <span class="yr">2024 – actualidad</span>
+      <h3>Grado en Ciencia de Datos e IA</h3>
+      <p>Universidad Miguel Hernández. Estadística, aprendizaje automático, simulación, álgebra lineal y optimización.</p>
+      <div class="tags"><span>Python</span><span>R</span><span>ML</span><span>Simulación</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="stack"><div class="inner">
+  <span class="kicker">Conocimientos</span>
+  <h2>Con qué programo y qué sé hacer</h2>
+  <p class="lead">Una autoevaluación de 1 a 5, donde 3 es usarlo con soltura en un proyecto propio.</p>
+  <div class="stack">
+    <div>
+      <p class="subhead">Lenguajes</p>
+      <div class="bars" id="bars"></div>
+      <div class="scale" aria-hidden="true"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+    </div>
+    <div>
+      <p class="subhead" style="text-align:center">Áreas</p>
+      <svg id="radar" role="img" aria-label="Gráfico radar de conocimientos por área"></svg>
+    </div>
+  </div>
+  <div class="chips" aria-label="Herramientas">
+    <span>pandas</span><span>NumPy</span><span>SciPy</span><span>scikit-learn</span><span>tidyverse</span><span>Streamlit</span><span>FastAPI</span><span>Docker</span><span>SQLite</span><span>MySQL</span><span>Git</span><span>Jenkins</span><span>Jupyter</span><span>Android Studio</span>
+  </div>
+</div></section>
+
+<section id="proyectos" class="band"><div class="inner">
+  <span class="kicker">Proyectos</span>
+  <h2>Lo que he construido</h2>
+  <p class="lead">Una selección de mis repositorios. Los marcados como <b>desplegados</b> se pueden probar en vivo.</p>
+  <div class="projects" id="projects"></div>
+</div></section>
+
+<section id="aficiones"><div class="inner">
+  <span class="kicker">Fuera del código</span>
+  <h2>Aficiones</h2>
+  <div class="hobbies">
+    <div class="hobby">
+      <div class="glyph"><svg viewBox="0 0 24 24"><path d="M12 2 21 7v10l-9 5-9-5V7z"/><path d="M12 2v20M3 7l9 5 9-5"/></svg></div>
+      <h3>Rol de mesa</h3>
+      <p>Juego y dirijo partidas de Dungeons &amp; Dragons. Preparo aventuras cortas con su estructura, sus giros y personajes que dan juego en la mesa.</p>
+    </div>
+    <div class="hobby">
+      <div class="glyph"><svg viewBox="0 0 24 24"><circle cx="14" cy="4" r="2"/><path d="M8 21l3-6 3 2v4M6 12l3-3 4 1 2 3 3 1M11 15l-1-5"/></svg></div>
+      <h3>Deporte</h3>
+      <p>Salgo a correr, entreno en el gimnasio y juego al pádel. Me ayuda a desconectar y a mantener la constancia que luego aplico a los proyectos.</p>
+    </div>
+    <div class="hobby">
+      <div class="glyph"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M7 6l2 4M12 6l2 4M17 6l2 4"/></svg></div>
+      <h3>Cine y series</h3>
+      <p>Me encanta ver películas y series, y sobre todo pensar en ellas después: opinar, reflexionar y comentarlas. Apunto y reseño lo que veo en Letterboxd.</p>
+      <p class="hobby-link"><a href="https://letterboxd.com/AdriCoMo/" target="_blank" rel="noopener">Mi perfil en Letterboxd ↗</a></p>
+    </div>
+  </div>
+</div></section>
+
+<section id="contacto" class="band"><div class="inner">
+  <div class="contact">
+    <div>
+      <span class="kicker">Contacto</span>
+      <h2>¿Hablamos?</h2>
+      <p class="lead">Busco aprender en equipos que trabajen con datos.</p>
+    </div>
+    <dl>
+      <dt>Correo</dt><dd><a href="mailto:adricomo94@gmail.com">adricomo94@gmail.com</a></dd>
+      <dt>GitHub</dt><dd><a href="https://github.com/AdrianColomoMoragues" target="_blank" rel="noopener">AdrianColomoMoragues</a></dd>
+      <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/adri%C3%A1n-colomo-moragues-6305581b0/" target="_blank" rel="noopener">Adrián Colomo Moragues</a></dd>
+      <dt>Ciudad</dt><dd>Alicante</dd>
+    </dl>
+  </div>
+</div></section>
+
+<footer><div class="inner">Adrián Colomo Moragues · 2026</div></footer>
+
+<script src="js/data.js?v=9"></script>
+<script src="js/main.js?v=8"></script>
+</body>
+</html>
