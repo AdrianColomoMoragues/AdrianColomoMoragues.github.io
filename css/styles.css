@@ -159,3 +159,15 @@ footer .inner{padding-block:24px;color:var(--muted);font-size:13px;border-top:1p
 .hobby .hobby-link{margin-top:12px;font:500 13px var(--mono)}
 .hobby .hobby-link a{text-decoration:none;color:var(--accent-3)}
 .hobby .hobby-link a:hover{text-decoration:underline}
+
+/* Conocimientos agrupados */
+.skillgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.skillcard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;min-width:0;border-top:3px solid var(--accent)}
+.skillcard.c2{border-top-color:var(--accent-2)} .skillcard.c3{border-top-color:var(--accent-3)} .skillcard.c4{border-top-color:var(--sky)}
+.skillcard h3{margin:0 0 12px;font:700 17px var(--display);font-stretch:92%}
+.skillcard .chips{margin-top:0}
+.skillcard .chips span{background:var(--accent-soft)}
+.skillcard.c2 .chips span{background:var(--pink-soft)} .skillcard.c3 .chips span{background:var(--yellow-soft)}
+.learning{margin:16px 0 0;color:var(--muted);font-size:14.5px}
+.learning b{color:var(--fg)}
+@media (max-width:720px){.skillgrid{grid-template-columns:1fr}}
